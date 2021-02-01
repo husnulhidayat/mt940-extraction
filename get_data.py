@@ -41,7 +41,7 @@ def get_dataframe():
     '''
     
     # count total transaction
-    mt940 = MT940('capital.TXT')
+    mt940 = MT940(f'{MT940_FILE')
     statement = mt940.statements[0]
     count = len(statement.transactions)
     
